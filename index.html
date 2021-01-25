@@ -8,7 +8,7 @@
     <meta name="description" content="Prueba BootCamp Viaje Chile">
     <title>Viajes Chile</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS 4.6.0 VERSION-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Font Awesome -->
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- HEADER NAV SECTION-->
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-dark fixed-top">
             <div class="container">
@@ -76,25 +76,26 @@
         </div>
     </section>
 
-    <!-- QUIÉNES SOMOS -->
-    <section class="container-fluid text-left text-light py-5 d-none d-sm-block" id="about-us">
+    <!-- ABOUT US SECTION -->
+    <section class="container-fluid text-left text-light py-5 d-none d-md-block" id="about-us">
         <h3 class="text-center pb-3">¿Quiénes somos?</h3>
 
         <div class="container">
             <div class="line border-info border-top"></div>
             <div class="row my-1 pb-3">
                 <div class="col-md-4 mt-5">
-                    <i class="container-fluid fas fa-plane fa-2x bg-info py-1 text-center"></i>
+                    <i class="container-fluid fas fa-plane fa-2x bg-info py-1 text-center" data-toggle="tooltip" data-placement="top" title="Obtén los mejores vuelos">
+                        </i>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente in quia molestiae quisquam nulla, obcaecati consequuntur rem incidunt facilis omnis iure, quod officia dolorem, laudantium totam sint mollitia quam culpa corrupti voluptatum
                         rerum amet magni! Iusto quod blanditiis exercitationem culpa cumque, impedit debitis facere distinctio repellendus! Minima ea reprehenderit perspiciatis ipsa temporibus, ex placeat esse dolore consectetur voluptate neque rem.</p>
                 </div>
                 <div class="col-md-4 mt-5">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente in quia molestiae quisquam nulla, obcaecati consequuntur rem incidunt facilis omnis iure, quod officia dolorem, laudantium totam sint mollitia quam culpa corrupti voluptatum
                         rerum amet magni! Iusto quod blanditiis exercitationem culpa cumque, impedit debitis facere distinctio repellendus! Minima ea reprehenderit perspiciatis ipsa temporibus, ex placeat esse dolore consectetur voluptate neque rem.</p>
-                    <i class="container-fluid fas fa-mountain fa-2x bg-info py-1 text-center"></i>
+                    <i class="container-fluid fas fa-mountain fa-2x bg-info py-1 text-center" data-toggle="tooltip" data-placement="bottom" title="Visita nuestras increíbles montañas"></i>
                 </div>
                 <div class="col-md-4 mt-5">
-                    <i class="container-fluid fas fa-route fa-2x bg-info py-1 text-center"></i>
+                    <i class="container-fluid fas fa-route fa-2x bg-info py-1 text-center" data-toggle="tooltip" data-placement="top" title="Los mejores tours guiados"></i>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente in quia molestiae quisquam nulla, obcaecati consequuntur rem incidunt facilis omnis iure, quod officia dolorem, laudantium totam sint mollitia quam culpa corrupti voluptatum
                         rerum amet magni! Iusto quod blanditiis exercitationem culpa cumque, impedit debitis facere distinctio repellendus! Minima ea reprehenderit perspiciatis ipsa temporibus, ex placeat esse dolore consectetur voluptate neque rem.</p>
                 </div>
@@ -102,44 +103,52 @@
         </div>
     </section>
 
-    <!-- FEATURED -->
-    <section class="container text-light my-5 pb-5 d-sm-block" id="featured">
+    <!-- FEATURED SECTION-->
+    <section class="container text-light my-5 pb-5" id="featured">
         <h3 class="display-5 text-center my-4">Destacados</h3>
         <div class="line border-info border-top pt-2 pb-3"></div>
 
         <div class="card-deck">
-            <div class="card text-left bg-info">
-                <img src="assets/img/card1.jpg" class="card-img-top" alt="lake and mountains">
-                <div class="card-body font-weight-light">
-                    <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text card-11">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+            <div class="col-lg-3 pb-4">
+                <div class="card text-left bg-info">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="lake and mountains">
+                    <div class="card-body font-weight-light">
+                        <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text card-11">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card text-left bg-info">
-                <img src="assets/img/card2.jpg" class="card-img-top" alt="beautiful lake">
-                <div class="card-body font-weight-light">
-                    <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+            <div class="col-lg-3 pb-4">
+                <div class="card text-left bg-info">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="beautiful lake">
+                    <div class="card-body font-weight-light">
+                        <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card text-left font-weight-light bg-info">
-                <img src="assets/img/card3.jpg" class="card-img-top" alt="landscape">
-                <div class="card-body">
-                    <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+            <div class="col-lg-3 pb-4">
+                <div class="card text-left font-weight-light bg-info">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="landscape">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card text-left font-weight-light bg-info">
-                <img src="assets/img/card4.jpg" class="card-img-top" alt="tropical forest">
-                <div class="card-body">
-                    <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+            <div class="col-lg-3 pb-4">
+                <div class="card text-left font-weight-light bg-info">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="tropical forest">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content lead-in to additional content.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT TYPEFORM-->
+    <!-- TYPEFORM CONTACT FORM SECTION-->
     <section class="container" id="contact">
         <h3 class="display-5 text-white text-center my-4">Contacto</h3>
         <div class="line border-info border-top pt-2"></div>
@@ -209,12 +218,13 @@
         </div>
     </footer>
 
-    <!--JS-->
+    <!--Jquery 3.5.1 Version-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- jQuery and Bootstrap(4.6.0 Version) Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+    <!--JS Link-->
     <script src="assets/js/index.js"></script>
 
 </body>

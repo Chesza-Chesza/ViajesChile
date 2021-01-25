@@ -1,11 +1,10 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
+    background-color: #000000;
 }
 
 .hero-section {
-    min-height: 600px;
     margin: 0;
     padding: 0;
 }
