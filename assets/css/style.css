@@ -4,6 +4,12 @@ body {
     background-color: black;
 }
 
-.hero-section img {
-    background-size: cover;
+.hero-section {
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    font-size: 30px;
 }
